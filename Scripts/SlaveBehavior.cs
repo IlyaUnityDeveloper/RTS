@@ -24,7 +24,7 @@ public class SlaveBehavior : MonoBehaviour
 		{
 			if (Vector3.Distance(transform.position, i.transform.position)<2)
 			{
-				mainStocks.IncreaseGold();
+				mainStocks.ChangeGold(Time.deltaTime);
 			}
 		}
 	}

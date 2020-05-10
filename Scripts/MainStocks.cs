@@ -15,9 +15,9 @@ public class MainStocks : MonoBehaviour
 	}
 	
 	//Пополнить казну золотом
-	public void IncreaseGold ()
+	public void ChangeGold (float count)
 	{
-		gold += Time.deltaTime;
+		gold += count;
 		goldCount.text = "Золото: "+Mathf.Floor(gold);
 	}
 }

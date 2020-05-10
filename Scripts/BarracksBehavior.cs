@@ -35,7 +35,7 @@ public class BarracksBehavior : MonoBehaviour
 		if (mainStocks.gold >= price)
 		{
 			Instantiate(unit, transform.position + new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-2.6f, -2.5f)), transform.rotation);
-			mainStocks.gold -= price;
+			mainStocks.ChangeGold(-price);
 		}
 	}
 }
