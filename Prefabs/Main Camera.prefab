@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5800673466282442675}
   - component: {fileID: -384142887838042000}
   - component: {fileID: 3613702731638837926}
+  - component: {fileID: 1178389191}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -99,6 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allObjects: []
+  selectable: []
+  ourunit: []
+  mines: []
+  enemies: []
 --- !u!114 &-384142887838042000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +141,22 @@ MonoBehaviour:
     width: 0
     height: 0
   getAllObjects: {fileID: 0}
+--- !u!114 &1178389191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3294674397729649360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ae84675c2eb264993a54e5cccc0ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allObjects: []
+  warriors: []
+  slaves: []
+  enemies: []
+  warrior: {fileID: 4133656326515327256, guid: e03a3d226e19e42479355b33c706e6c9, type: 3}
+  slave: {fileID: 5641512613162540149, guid: ba1485f97480ad74697974210fcaad5c, type: 3}
+  enemy: {fileID: 5630430421002461141, guid: 4fefa9ecaaed87348add09bd89fbd8d9, type: 3}
