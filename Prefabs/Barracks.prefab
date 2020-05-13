@@ -316,6 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warrior: {fileID: 4133656326515327256, guid: e03a3d226e19e42479355b33c706e6c9, type: 3}
   slave: {fileID: 5641512613162540149, guid: ba1485f97480ad74697974210fcaad5c, type: 3}
+  mainStocks: {fileID: 0}
 --- !u!208 &9170835362190866591
 NavMeshObstacle:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Используется на объекте MainCamera
+//Используется на объекте Canvas
 public class SaveAndLoad : MonoBehaviour
 {
 	[SerializeField]
@@ -25,23 +25,8 @@ public class SaveAndLoad : MonoBehaviour
 		mainStocks = Camera.main.GetComponent<MainStocks>(); //Получение информации о ресурсах
 	}
 	
-    void OnGUI()
-	{
-		//При нажатии на кнопку Save, игра сохраняется
-		if (GUI.Button(new Rect(Screen.width-220, 10, 100, 20), "Save"))
-		{
-			Save();
-		}
-		
-		//При нажатии на кнопку Load, игра загружается
-		if (GUI.Button(new Rect(Screen.width-110, 10, 100, 20), "Load"))
-		{
-			Load();
-		}
-	}
-	
 	//Сохранение игры
-	void Save()
+	public void Save()
 	{
 		allObjects = SceneManager.GetActiveScene().GetRootGameObjects(); //Поиск всех объектов на сцене
 		
@@ -78,7 +63,7 @@ public class SaveAndLoad : MonoBehaviour
 	}
 	
 	//Загрузка игры
-	void Load()
+	public void Load()
 	{
 		allObjects = SceneManager.GetActiveScene().GetRootGameObjects(); //Поиск всех объектов на сцене
 		
