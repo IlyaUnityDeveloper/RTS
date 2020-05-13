@@ -91,7 +91,7 @@ public class SaveAndLoad : MonoBehaviour
 		}
 		
 		//Загрузка и обновление показателя текущего количества золота
-		mainStocks.SetGold(PlayerPrefs.GetFloat("Gold"));
+		mainStocks.ChangeGold(PlayerPrefs.GetFloat("Gold") - mainStocks.gold);
 		
 		//Загрузка определенных типов юнитов
 		LoadUnit(warriors, warrior, "Warrior");

@@ -20,11 +20,4 @@ public class MainStocks : MonoBehaviour
 		gold += count;
 		goldCount.text = "Золото: "+Mathf.Floor(gold);
 	}
-	
-	//Обновить счетчик золота
-	public void SetGold (float count)
-	{
-		gold = count;
-		goldCount.text = "Золото: "+Mathf.Floor(gold);
-	}
 }
