@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 //Используется на объектах Warrior и Slave
+[RequireComponent(typeof(Selectable))]
 public class Moveable : MonoBehaviour
 {
 	[SerializeField]
